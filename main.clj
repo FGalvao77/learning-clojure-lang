@@ -58,7 +58,7 @@
 ;;===============================
 (defn numbers-range 
   "Função para gerar um range de números:
-  - initial: ínicio
+  - initial: início
   - end: fim"
   [initial end] 
   (println (map inc (range initial end))))
