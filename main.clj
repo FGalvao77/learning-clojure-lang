@@ -1,48 +1,49 @@
-(println "Hello, World!")
+"Imprimindo o Hello, World!"
+(println "\nHello, World!")
 
 ;;===============================
-(defn add 
+(defn numbers-add 
   [a b]
   (println (+ a b)))
 
 (println "\nAddition")
-(add 5 6)
+(numbers-add 5 6)
 (println "==============")
 
 ;;===============================
-(defn sub 
+(defn numbers-sub 
   [a b]
   (println (- a b)))
 
 (println "\nSubtraction")
-(sub 5 10)
+(numbers-sub 5 10)
 (println "==============")
 
 ;;===============================
-(defn mul 
+(defn numbers-mul 
   [a b] 
   (println (* a b)))
 
 (println "\nMultiplication")
-(mul 5 3)
+(numbers-mul 5 3)
 (println "==============")
 
 ;;===============================
-(defn div
+(defn numbers-div
   [a b] 
   (println (/ a b)))
 
 (println "\nDivision")
-(div 10 2)
+(numbers-div 10 2)
 (println "==============")
 
 ;;===============================
-(defn pow 
+(defn numbers-pow 
   [a b]
   (println (Math/pow a b)))
 
 (println "\nPotentiation")
-(pow 2 3)
+(numbers-pow 2 3)
 (println "==============")
 
 ;;===============================
@@ -56,6 +57,9 @@
 
 ;;===============================
 (defn numbers-range 
+  "Função para gerar um range de números:
+  - initial: ínicio
+  - end: fim"
   [initial end] 
   (println (map inc (range initial end))))
 
