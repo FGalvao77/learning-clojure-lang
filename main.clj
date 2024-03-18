@@ -2,7 +2,7 @@
 (println "\nHello, World!")
 
 ;;===============================
-(defn numbers-add 
+(defn numbers-add
   [a b]
   (println (+ a b)))
 
@@ -11,7 +11,7 @@
 (println "==============")
 
 ;;===============================
-(defn numbers-sub 
+(defn numbers-sub
   [a b]
   (println (- a b)))
 
@@ -20,8 +20,8 @@
 (println "==============")
 
 ;;===============================
-(defn numbers-mul 
-  [a b] 
+(defn numbers-mul
+  [a b]
   (println (* a b)))
 
 (println "\nMultiplication")
@@ -30,7 +30,7 @@
 
 ;;===============================
 (defn numbers-div
-  [a b] 
+  [a b]
   (println (/ a b)))
 
 (println "\nDivision")
@@ -38,7 +38,7 @@
 (println "==============")
 
 ;;===============================
-(defn numbers-pow 
+(defn numbers-pow
   [a b]
   (println (Math/pow a b)))
 
@@ -47,7 +47,7 @@
 (println "==============")
 
 ;;===============================
-(defn square-root 
+(defn square-root
   [a]
   (println (Math/sqrt a)))
 
@@ -56,14 +56,34 @@
 (println "==============")
 
 ;;===============================
-(defn numbers-range 
+(defn numbers-range
   "Função para gerar um range de números:
   - initial: início
   - end: fim"
-  [initial end] 
+  [initial end]
   (println (map inc (range initial end))))
 
 (println "\nNumbers range:")
 (numbers-range 0 50)
-(println "==============") 
+(println "==============")
 
+;;===============================
+(defn can-drink?
+  [age]
+  (if (> age 18) "Beer" "Coke"))
+
+(println "\nConditional 'if':")
+(println (can-drink? 15))
+(println "==============")
+
+(defn can-drive?
+  [age]
+  (if (< age 18) "Can't drive!", "You can drive!"))
+
+(println "\nConditional 'if':")
+(println (can-drive? 17))
+(println "==============")
+
+(println "\nConditional 'if':")
+(println (can-drive? 18))
+(println "==============")
