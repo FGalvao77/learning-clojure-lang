@@ -76,6 +76,7 @@
 (println (can-drink? 15))
 (println "==============")
 
+;;===============================
 (defn can-drive?
   [age]
   (if (< age 18) "Can't drive!", "You can drive!"))
@@ -86,4 +87,18 @@
 
 (println "\nConditional 'if':")
 (println (can-drive? 18))
+(println "==============")
+
+;;===============================
+(defn adult?
+  [age]
+  (println "Your age:" age)
+  (if (>= age 18) "You're an adult!" "You aren't an adult!"))
+
+(println "\nConditional 'if':")
+(println (adult? 17))
+(println "==============")
+
+(println "\nConditional 'if':")
+(println (adult? 18))
 (println "==============")
